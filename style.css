@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #d6d8db;
+    overflow: none;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.nav-links a {
+	color: #fff;
+	text-decoration: none;
+    margin-right: 10px;
+
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+}
+
+.contactitems {
+    display: right;
+}
+
+.contact li {
+	list-style: none;
+}
+
+.about {
+	padding: 20px;
+	background-color: #d6d8db;
+}
+
+.destination-image{
+    width: 100vw;
+    height: 450px;
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.cityInfo {padding: 25px;}
+
+.destination {
+	padding: 20px;
+	background-color: #d6d8db;
+    width: 100%;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.card {
+	background-color: #d6d8db;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	text-align: center;
+}
+
+.card img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.card h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+.card p {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.card a {
+	display: block;
+	margin-top: 20px;
+	color: #333;
+	text-decoration: none;
+}
+
+.card a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+footer nav {
+	display: flex;
+	justify-content: center;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	margin-right: 20px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.logo {
+		margin-bottom: 20px;
+	}
+	.nav-links {
+		margin-top: 20px;
+	}
+	.contact {
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: 20px;
+	}
+	.contact ul:first-child {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 576px) {
+	.grid {
+		grid-template-columns: 1fr;
+	}
+	.card h3 {
+		font-size: 20px;
+	}
+}
+
+
